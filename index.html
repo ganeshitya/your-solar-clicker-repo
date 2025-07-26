@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Solar Clicker</h1>
+        <div class="display-panel">
+            <p>Energy: <span id="energy-display">0</span> Wh</p>
+            <p>Energy per Second: <span id="eps-display">0</span> Wh/s</p>
+        </div>
+
+        <button id="main-panel-button">
+            <img src="https://via.placeholder.com/150x150.png?text=Click+to+Generate" alt="Solar Panel" id="solar-panel-img">
+        </button>
+
+        <div class="upgrades-panel">
+            <h2>Upgrades</h2>
+            <div class="upgrade-item">
+                <h3>Small Solar Panel</h3>
+                <p>Cost: <span id="small-panel-cost">10</span> Wh</p>
+                <p>Adds 1 Wh/s</p>
+                <button id="buy-small-panel">Buy</button>
+            </div>
+            <div class="upgrade-item">
+                <h3>Battery Storage</h3>
+                <p>Cost: <span id="battery-cost">100</span> Wh</p>
+                <p>Adds 5 Wh/s</p>
+                <button id="buy-battery">Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
